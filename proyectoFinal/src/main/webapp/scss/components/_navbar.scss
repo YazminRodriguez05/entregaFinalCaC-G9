@@ -1,0 +1,33 @@
+.color {
+    &_nav {
+        background-color: map-get($paleta_de_colores, navegacion);
+    }
+
+    &_links {
+        color: map-get($paleta_de_colores, links);
+
+        &:hover {
+            color: map-get($paleta_de_colores, links);
+            opacity: 0.8;
+            transition: 2ms;
+        }
+
+        &_ticket {
+            color: map-get($paleta_de_colores, tickets);
+
+            &:hover {
+                color: map-get($paleta_de_colores, tickets);
+                opacity: 0.8;
+                transition: 2ms;
+            }
+        }
+    }
+}
+
+.icono {
+    padding-left: 75px;
+}
+
+.menu_nav {
+    padding-left: 300px;
+}

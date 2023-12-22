@@ -1,0 +1,54 @@
+.button{
+    border: none;
+    background-color: map-get($paleta_de_colores, buttom );
+    color: map-get($paleta_de_colores, links );
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    &:hover{
+        // background-color: rgba(49, 201, 49, 0.781);
+        opacity: 0.9;
+    }
+}
+
+
+/*Cards tickets*/
+.container_desc{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    div{
+        padding: 10px;
+        border: solid 1px;
+        border-color: blue;
+        text-align: center;
+    }
+    .desc_est{
+        border: solid 2px map-get($paleta_de_colores, azul);
+    }
+    .desc_trai{
+        border: solid 2px map-get($paleta_de_colores, celeste);
+    }
+    .desc_jun{
+        border: solid 2px map-get($paleta_de_colores, amarillo);
+    }
+}
+// Form tickets
+.container{
+    padding: 0 10rem 0 10rem ;
+}
+
+.total_pagar{
+    background-color: map-get($paleta_de_colores, total);
+    h3{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: larger;
+    }
+}
+
+.style_resumen{
+    background-color: lightblue;
+}

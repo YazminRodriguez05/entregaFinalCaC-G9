@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets | BS AS</title>
+    <!--ICON-->
+    <link rel="shortcut icon" href="../../resources/img/codoacodo.png" type="image/x-icon">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <!--Navbar Bootstrap-->
+        <nav class="navbar navbar-expand-lg color_nav">
+            <div class="container-fluid">
+                <a class="navbar-brand icono" href="../index.html">
+                    <img class="animate__animated animate__backInDown " src="../../resources/img/codoacodo.png" alt=""
+                        width="100">
+                    <span class="color_links">Conferencia BS AS</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse menu_nav" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link color_links" aria-current="page" href="../index.html">La
+                                conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color_links" href="../index.html">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color_links" href="../index.html">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color_links" href="../index.html">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color_links_ticket" href="./tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Descuentos -->
+        <section class="container_desc">
+            <div class="desc_est">
+                <h2>Estudiante</h2>
+                <h4>Tiene un descuento</h4>
+                <p>80%</p>
+                <p>* presentar documentacion</p>
+            </div>
+
+            <div class="desc_trai">
+                <h2>Trainee</h2>
+                <h4>Tiene un descuento</h4>
+                <p>50%</p>
+                <p>* presentar documentacion</p>
+            </div>
+
+            <div class="desc_jun">
+                <h2>Junior</h2>
+                <h4>Tiene un descuento</h4>
+                <p>15%</p>
+                <p>* presentar documentacion</p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="titulo">
+                <p>VENTA</p>
+                <h1>VALOR DEL TICKET $200</h1>
+            </div>
+            <h3 id="datos" class="text-center" style="padding: auto;"></h3>
+            <!-- Formulario -->
+            <form id="formulario" action="">
+                <div class="row gx-2">
+                    <div class="col-md mb-3">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <input type="text" id="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <input type="email" id="email" class="form-control" placeholder="Email" aria-label="Email" required>
+                    </div>
+                </div>
+                <div class="row gx-2">
+                    <div class="col-md mb-3">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" min="0" max="999" class="form-control" placeholder="Cantidad"
+                            aria-label="Cantidad" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" name="categoria" class="form-select">
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="total_pagar">
+                    <h3>Total a pagar: $ <span id="total"></span></h3>
+                </div>
+                <div class="row gx-2">
+                    <div class="col-md mb-3 d-grid">
+                        <button type="button" onclick="borrar()" class="btn btn-success ms-2 mb-3">Borrar todo</button>
+                    </div>
+                    <div class="col-md mb-3 d-grid">
+                        <button type="button" onclick="resumen()" class="btn btn-success ms-2 mb-3">Resumen</button>
+                    </div>
+                </div>
+            
+            </form>
+        </section>
+    </main>
+    <footer class="display">
+        <ul class="navegacion">
+            <li>
+                <a class="nav_link" href="#">Preguntas frecuentes</a>
+            </li>
+            <li>
+                <a class="nav_link" href="#">Contáctanos</a>
+            </li>
+            <li>
+                <a class="nav_link" href="#">Prensa</a>
+            </li>
+            <li>
+                <a class="nav_link" href="#">Conferencias</a>
+            </li>
+            <li>
+                <a class="nav_link" href="#">Terminos y condiciones</a>
+            </li>
+            <li>
+                <a class="nav_link" href="#">Privacidad</a>
+            </li>
+            <li>
+                <a class="nav_link" href="#">Estudiantes</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

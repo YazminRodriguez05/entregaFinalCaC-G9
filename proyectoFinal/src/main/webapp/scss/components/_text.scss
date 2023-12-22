@@ -1,0 +1,36 @@
+.titulo {
+    text-align: center;
+
+    p {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    h2 {
+        padding-top: 0px;
+    }
+}
+
+.txt_ubicacion {
+    background-color: map-get($paleta_de_colores, navegacion);
+    color: whitesmoke;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    h3 {
+
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        letter-spacing: 1px;
+        align-items: center;
+    }
+}
